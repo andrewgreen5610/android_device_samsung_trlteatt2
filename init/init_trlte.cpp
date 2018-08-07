@@ -57,19 +57,19 @@ void init_variant_properties() {
 
     property_get("ro.bootloader", bootloader);
 
-    if (strstr(bootloader, "N910W8")) {
+    if (strstr(bootloader, "N910A")) {
         /* trltecan These values are taken from TMO and edited for the 910W8 FIXME */
-        property_set("ro.build.fingerprint", "samsung/trltevl/trltecan:6.0.1/MRA58K/N910TUVU2EPE3:user/release-keys");
-        property_set("ro.build.description", "trltevl-user 6.0.1 MRA58K N910TUVU2EPE3 release-keys");
-        property_set("ro.product.model", "SM-N910W8");
-        property_set("ro.product.device", "trltecan");
+        property_set("ro.build.fingerprint", "samsung/trlteatt/trlteatt:6.0.1/MRA58K/N910AUCS2EPK3:user/release-keys");
+        property_set("ro.build.description", "trlteatt-user 6.0.1 MRA58K N910AUCS2EPK3 release-keys");
+        property_set("ro.product.model", "SM-N910A");
+        property_set("ro.product.device", "trlteatt");
         gsm_properties();
     } else {
         /* trltetmo */
-        property_set("ro.build.fingerprint", "samsung/trltetmo/trltetmo:6.0.1/MRA58K/N910TUVU2EPE3:user/release-keys");
-        property_set("ro.build.description", "trltetmo-user 6.0.1 MRA58K N910TUVU2EPE3 release-keys");
-        property_set("ro.product.model", "SM-N910T");
-        property_set("ro.product.device", "trltetmo");
+        property_set("ro.build.fingerprint", "samsung/trlteatt/trlteatt:6.0.1/MRA58K/N910AUCS2EPK3:user/release-keys");
+        property_set("ro.build.description", "trlteatt-user 6.0.1 MRA58K N910AUCS2EPK3 release-keys");
+        property_set("ro.product.model", "SM-N910A");
+        property_set("ro.product.device", "trlteatt");
         gsm_properties();
     }
 
